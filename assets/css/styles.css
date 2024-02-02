@@ -430,7 +430,7 @@ input {
 }
 
 .about__img-one {
-  width: 130px;
+  width: 250px;
 }
 
 .about__img-two {
@@ -984,7 +984,7 @@ input {
 	  padding-top: 90px;
   }
   .about__img-one {
-    width: 230px;
+    width: 450px;
   }
   .about__img-two {
     width: 290px;
@@ -1044,5 +1044,90 @@ input {
   }
   .home__container, .home__img {
     height: 640px;
+  }
+}
+
+.ani{
+	font-family: Oswald;
+	font-size: 40px;
+   animation: Color 4s linear infinite;
+  -webkit-animation: Color 4s ease-in-out infinite;
+}
+
+@keyframes Color{
+  0%{
+    color:#A0D468;
+  }
+  
+  20%{
+    color:#4FC1E9;
+  }
+  
+  40%{
+    color:#FFCE54;
+  }
+  
+  60%{
+    color:#FC6E51;
+  }
+  
+  80%{
+    color:#ED5565;
+  }
+  
+  100%{
+    color:#AC92EC;
+  }
+}
+
+@-moz-keyframes Color{
+  0%{
+    color:#A0D468;
+  }
+  
+  20%{
+    color:#4FC1E9;
+  }
+  
+  40%{
+    color:#FFCE54;
+  }
+  
+  60%{
+    color:#FC6E51;
+  }
+  
+  80%{
+    color:#ED5565;
+  }
+  
+  100%{
+    color:#AC92EC;
+  }
+}
+
+@-webkit-keyframes Color{
+  0%{
+    color:#A0D468;
+  }
+  
+  20%{
+    color:#4FC1E9;
+  }
+  
+  40%{
+    color:#FFCE54;
+  }
+  
+  60%{
+    color:#FC6E51;
+  }
+  
+  80%{
+    color:#ED5565;
+  }
+  
+  100%{
+    color:#AC92EC;
   }
 }
