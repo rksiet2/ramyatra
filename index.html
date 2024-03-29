@@ -1,21 +1,20 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
     <html lang="en">
     <head>
+		<title>Ram Yatra</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+		
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" rel="stylesheet" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
 
         <!--=============== REMIXICONS ===============-->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-        
-        <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
-
-        <title>Ram Yatra</title>
     </head>
     <body>
         <header class="header" id="header">
@@ -61,7 +60,7 @@
                 <div class="home__container container grid">
                     <div class="home__data">
                         <h1 class="home__data-title">Explore The Divine Path <br>Ram <b class ="ani"> यात्रा</b></h1>
-                        <a href="#" class="button">Explore Ram</a>
+                        <a href="#place" class="button">Explore Ram</a>
 
                     </div>
 
@@ -80,7 +79,7 @@
                     <div class="home__info">
                         <div>
                             <span class="home__info-title">Best places to visit in </span>
-                            <a href="" class="button button--flex button--link home__info-button">
+                            <a href="#discover" class="button button--flex button--link home__info-button">
                                 Ayodhya <i class="ri-arrow-right-line"></i>
                             </a>
                         </div>
@@ -114,41 +113,258 @@
                     </div>
                 </div>
             </section>
-            
-            <!--==================== DISCOVER ====================-->
-            <section class="discover section" id="discover">
-                <h2 class="section__title">Places to Visit in Ayodhya</h2>
-                
-                <div class="discover__container container swiper-container">
-                    <div class="swiper-wrapper">
-                        <!--==================== DISCOVER 1 ====================-->
-                        <div class="discover__card swiper-slide">
-                            <img src="assets\ramYatra\ss.jpg" alt="" class="discover__img">
-                            <div class="discover__data">
-                                <h2 class="discover__title">Hanuman Garhi</h2>
-                                <span class="discover__description">24 tours available</span>
+
+
+            <!--==================== PLACES ====================-->
+            <section class="place section" id="place">
+                <h2 class="section__title">Explore Digital Tour Guide Services</h2>
+
+                <div class="place__container container grid">	
+                    <!--==================== PLACES CARD 1 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/place1.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <!-- <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,8</span> -->
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Ram Janmabhoomi</h3>
+                                <span class="place__subtitle">Mandir</span>
+                                <span class="place__price">₹ 101</span>
                             </div>
                         </div>
 
-                        <!--==================== DISCOVER 3 ====================-->
-                        <div class="discover__card swiper-slide">
-                            <img src="assets\ramYatra\choodamani.jpg" alt="" class="discover__img">
-                            <div class="discover__data">
-                                <h2 class="discover__title">Dashrat Mahal</h2>
-                                <span class="discover__description">18 tours available</span>
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    <!--==================== PLACES CARD 2 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/place2.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                               <!-- <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,8</span> -->
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Hanuman Garhi</h3>
+                                <span class="place__subtitle">Mandir</span>
+                                <span class="place__price">₹ 51</span>
                             </div>
                         </div>
 
-                        <!--==================== DISCOVER 4 ====================-->
-                        <div class="discover__card swiper-slide">
-                            <img src="assets\ramYatra\lc.jpg" alt="" class="discover__img">
-                            <div class="discover__data">
-                                <h2 class="discover__title">Guptar Ghat</h2>
-                                <span class="discover__description">32 tours available</span>
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    <!--==================== PLACES CARD 3 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/place3.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <!-- <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,8</span> -->
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Shri Kale Ram</h3>
+                                <span class="place__subtitle">Mandir</span>
+                                <span class="place__price">₹ 51</span>
                             </div>
                         </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    <!--==================== PLACES CARD 4 ====================-->
+                    <!-- <div class="place__card">
+                        <img src="assets/img/place4.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,8</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Whitehaven</h3>
+                                <span class="place__subtitle">Australia</span>
+                                <span class="place__price">₹ 51</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div> -->
+
+                    <!--==================== PLACES CARD 5 ====================-->
+                   <!--  <div class="place__card">
+                        <img src="assets/img/place5.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,8</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Hvar</h3>
+                                <span class="place__subtitle">Croacia</span>
+                                <span class="place__price">₹1999</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div> -->
+                </div>
+            </section>
+
+ 
+            <!--==================== VIDEO ====================-->
+            <section class="video section">
+                <h2 class="section__title">Video Tour</h2>
+
+                <div class="video__container container">
+                    <p class="video__description">Soar above the sprawling temple complex with stunning aerial footage. Gain a bird's-eye perspective of the entire architectural masterpiece and its surroundings.
+                    </p>
+
+                    <div class="video__content">
+                        <video id="video-file">
+                           <source src="assets/ramYatra/fullMandirView.mp4" type="video/mp4">
+                        </video>
+
+                        <button class="button button--flex video__button" id="video-button">
+                            <i class="ri-play-line video__button-icon" id="video-icon"></i>
+                        </button>
                     </div>
                 </div>
+            </section>
+ 
+			
+			
+			
+            <!--==================== GALLERY ====================-->
+            <section class="discover section" id="discover">
+                <h2 class="section__title">Places to Visit in Ayodhya</h2>
+				<div class="gallery_container container">
+					 
+
+							<div class="swiper-container main-slider loading">
+							  <div class="swiper-wrapper">
+								<div class="swiper-slide">
+								  <figure class="slide-bgimg" style="background-image:url(assets/ramYatra/mandir.jpg)">
+									<img src="assets/ramYatra/mandir.jpg" class="entity-img" />
+								  </figure>
+								  <div class="content">
+									<p class="title">Ram Mandir</p>
+									<span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+								  </div>
+								</div>
+								<div class="swiper-slide">
+								   <figure class="slide-bgimg" style="background-image:url(assets/ramYatra/ss.jpg)">
+									<img src="assets/ramYatra/ss.jpg" class="entity-img" />
+								  </figure>
+								  <div class="content">
+									<p class="title">Alexis Berry</p>
+									<span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+								  </div>
+								</div>
+								<div class="swiper-slide">
+								   <figure class="slide-bgimg" style="background-image:url(assets/ramYatra/mandir1.jpg)">
+									<img src="assets/ramYatra/mandir1.jpg" class="entity-img" />
+								  </figure>
+								  <div class="content">
+									<p class="title">Billie	Pierce</p>
+									<span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+								  </div>
+								</div>
+								<div class="swiper-slide">
+								   <figure class="slide-bgimg" style="background-image:url(assets/ramYatra/cm.jpg)">
+									<img src="assets/ramYatra/cm.jpg" class="entity-img" />
+								  </figure>
+								  <div class="content">
+									<p class="title">Trevor	Copeland</p>
+									<span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+								  </div>
+								</div>
+								<div class="swiper-slide">
+								   <figure class="slide-bgimg" style="background-image:url(assets/ramYatra/lc.jpg)">
+									<img src="assets/ramYatra/lc.jpg" class="entity-img" />
+								  </figure>
+								  <div class="content">
+									<p class="title">Bernadette	Newman</p>
+									<span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+								  </div>
+								</div>
+							  </div>
+							  <!-- If we need navigation buttons -->
+							  <div class="swiper-button-prev swiper-button-white"></div>
+							  <div class="swiper-button-next swiper-button-white"></div>
+							</div>
+
+							<!-- Thumbnail navigation -->
+							<div class="swiper-container nav-slider loading">
+							  <div class="swiper-wrapper" role="navigation">
+								<div class="swiper-slide">
+								   <figure class="slide-bgimg" style="background-image:url(assets/ramYatra/mandir.jpg)">
+									<img src="assets/ramYatra/mandir.jpg" class="entity-img" />
+								  </figure>
+								  <div class="content">
+									<p class="title">Shaun Matthews</p>
+								  </div>
+								</div>
+								<div class="swiper-slide">
+								   <figure class="slide-bgimg" style="background-image:url(assets/ramYatra/ss.jpg)">
+									<img src="assets/ramYatra/ss.jpg" class="entity-img" />
+								  </figure>
+								  <div class="content">
+									<p class="title">Alexis Berry</p>
+								  </div>
+								</div>
+								<div class="swiper-slide">
+								  <figure class="slide-bgimg" style="background-image:url(assets/ramYatra/mandir1.jpg)">
+									<img src="assets/ramYatra/mandir1.jpg" class="entity-img" />
+								  </figure>
+								  <div class="content">
+									<p class="title">Billie	Pierce</p>
+								  </div>
+								</div>
+								<div class="swiper-slide">
+								   <figure class="slide-bgimg" style="background-image:url(assets/ramYatra/cm.jpg)">
+									<img src="assets/ramYatra/cm.jpg" class="entity-img" />
+								  </figure>
+								  <div class="content">
+									<p class="title">Trevor	Copeland</p>
+								  </div>
+								</div>
+								<div class="swiper-slide">
+								   <figure class="slide-bgimg" style="background-image:url(assets/ramYatra/lc.jpg)">
+									<img src="assets/ramYatra/lc.jpg" class="entity-img" />
+								  </figure>
+								  <div class="content">
+									<p class="title">Bernadette	Newman</p>
+								  </div>
+								</div>
+							  </div>
+							</div>
+
+
+
+					 
+				</div>
             </section>
 
             <!--==================== EXPERIENCE ====================-->
@@ -185,156 +401,6 @@
                 </div>
             </section>
 
-            <!--==================== VIDEO ====================-->
-            <section class="video section">
-                <h2 class="section__title">Video Tour</h2>
-
-                <div class="video__container container">
-                    <p class="video__description">Soar above the sprawling temple complex with stunning aerial footage. Gain a bird's-eye perspective of the entire architectural masterpiece and its surroundings.
-                    </p>
-
-                    <div class="video__content">
-                        <video id="video-file">
-                           <source src="assets/ramYatra/fullMandirView.mp4" type="video/mp4">
-                        </video>
-
-                        <button class="button button--flex video__button" id="video-button">
-                            <i class="ri-play-line video__button-icon" id="video-icon"></i>
-                        </button>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== PLACES ====================-->
-            <section class="place section" id="place">
-                <h2 class="section__title">Choose Your Place</h2>
-
-                <div class="place__container container grid">
-                    <!--==================== PLACES CARD 1 ====================-->
-                    <div class="place__card">
-                        <img src="assets/img/place1.jpg" alt="" class="place__img">
-                        
-                        <div class="place__content">
-                            <span class="place__rating">
-                                <i class="ri-star-line place__rating-icon"></i>
-                                <span class="place__rating-number">4,8</span>
-                            </span>
-
-                            <div class="place__data">
-                                <h3 class="place__title">Bali</h3>
-                                <span class="place__subtitle">Indonesia</span>
-                                <span class="place__price">$2499</span>
-                            </div>
-                        </div>
-
-                        <button class="button button--flex place__button">
-                            <i class="ri-arrow-right-line"></i>
-                        </button>
-                    </div>
-
-                    <!--==================== PLACES CARD 2 ====================-->
-                    <div class="place__card">
-                        <img src="assets/img/place2.jpg" alt="" class="place__img">
-                        
-                        <div class="place__content">
-                            <span class="place__rating">
-                                <i class="ri-star-line place__rating-icon"></i>
-                                <span class="place__rating-number">5,0</span>
-                            </span>
-
-                            <div class="place__data">
-                                <h3 class="place__title">Bora Bora</h3>
-                                <span class="place__subtitle">Polinesia</span>
-                                <span class="place__price">$1599</span>
-                            </div>
-                        </div>
-
-                        <button class="button button--flex place__button">
-                            <i class="ri-arrow-right-line"></i>
-                        </button>
-                    </div>
-
-                    <!--==================== PLACES CARD 3 ====================-->
-                    <div class="place__card">
-                        <img src="assets/img/place3.jpg" alt="" class="place__img">
-                        
-                        <div class="place__content">
-                            <span class="place__rating">
-                                <i class="ri-star-line place__rating-icon"></i>
-                                <span class="place__rating-number">4,9</span>
-                            </span>
-
-                            <div class="place__data">
-                                <h3 class="place__title">Hawaii</h3>
-                                <span class="place__subtitle">EE.UU</span>
-                                <span class="place__price">$3499</span>
-                            </div>
-                        </div>
-
-                        <button class="button button--flex place__button">
-                            <i class="ri-arrow-right-line"></i>
-                        </button>
-                    </div>
-
-                    <!--==================== PLACES CARD 4 ====================-->
-                    <div class="place__card">
-                        <img src="assets/img/place4.jpg" alt="" class="place__img">
-                        
-                        <div class="place__content">
-                            <span class="place__rating">
-                                <i class="ri-star-line place__rating-icon"></i>
-                                <span class="place__rating-number">4,8</span>
-                            </span>
-
-                            <div class="place__data">
-                                <h3 class="place__title">Whitehaven</h3>
-                                <span class="place__subtitle">Australia</span>
-                                <span class="place__price">$2499</span>
-                            </div>
-                        </div>
-
-                        <button class="button button--flex place__button">
-                            <i class="ri-arrow-right-line"></i>
-                        </button>
-                    </div>
-
-                    <!--==================== PLACES CARD 5 ====================-->
-                    <div class="place__card">
-                        <img src="assets/img/place5.jpg" alt="" class="place__img">
-                        
-                        <div class="place__content">
-                            <span class="place__rating">
-                                <i class="ri-star-line place__rating-icon"></i>
-                                <span class="place__rating-number">4,8</span>
-                            </span>
-
-                            <div class="place__data">
-                                <h3 class="place__title">Hvar</h3>
-                                <span class="place__subtitle">Croacia</span>
-                                <span class="place__price">$1999</span>
-                            </div>
-                        </div>
-
-                        <button class="button button--flex place__button">
-                            <i class="ri-arrow-right-line"></i>
-                        </button>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== SUBSCRIBE ====================-->
-            <section class="subscribe section">
-          
-<!-- You can add more ".slideshow-image" elements, but remember to update the "$items" variable on SCSS -->
-					<div class="slideshow">
-					<div class="slideshow-image" style="background-image: url('https://source.unsplash.com/category/nature/1600x1400')"></div>
-					<div class="slideshow-image" style="background-image: url('https://source.unsplash.com/category/buildings/1600x1400')"></div>
-					<div class="slideshow-image" style="background-image: url('https://source.unsplash.com/category/food/1600x1400')"></div>
-					<div class="slideshow-image" style="background-image: url('https://source.unsplash.com/category/technology/1600x1400')"></div>
-					</div>
-
-  
-            </section>
             
             <!--==================== SPONSORS ====================-->
             <section class="sponsor section">
@@ -430,7 +496,7 @@
                 </div>
 
                 <div class="footer__rights">
-                    <p class="footer__copy">&#169; 2021 Bedimcode. All rigths reserved.</p>
+                    <p class="footer__copy">&#169; 2024 Bedimcode. All rigths reserved.</p>
                     <div class="footer__terms">
                         <a href="#" class="footer__terms-link">Terms & Agreements</a>
                         <a href="#" class="footer__terms-link">Privacy Policy</a>
@@ -446,11 +512,10 @@
 
         <!--=============== SCROLL REVEAL===============-->
         <script src="assets/js/scrollreveal.min.js"></script>
-        
-        <!--=============== SWIPER JS ===============-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
 
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
+		<script src="assets/js/script.js"></script>
+
     </body>
 </html>
