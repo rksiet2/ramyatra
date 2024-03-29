@@ -1,5 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -447,45 +448,118 @@ input {
   transform: var(--img-scale);
 }
 
-/*=============== DISCOVER ===============*/
-.discover__card {
-  position: relative;
-  width: 200px;
-  overflow: var(--img-hidden);
+/*=============== GALLERY ===============*/
+.gallery_container{
+	height:35vh
 }
 
-.discover__data {
-  position: absolute;
-  bottom: 1.5rem;
-  left: 1rem;
+%transition_all_03s {
+  transition:all .3s ease;
+}
+%backface_visibility_hidden{
+  backface-visibility:hidden;
+  -webkit-backface-visibility:hidden;
 }
 
-.discover__title, 
-.discover__description {
-  color: var(--white-color);
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.discover__title {
-  font-size: var(--h3-font-size);
-  margin-bottom: var(--mb-0-25);
+.swiper-container {
+  width: 80%;
+  height: 45vh;
+  display:inline-block;
+  vertical-align:top;
+  float:left;
+  transition:opacity .6s ease, transform .3s ease;
+  &.nav-slider{
+    width:20%;
+    padding-left:5px;
+    .swiper-slide{
+      cursor:pointer;
+      opacity:.4;
+      transition:opacity .3s ease;
+      &.swiper-slide-active{
+        opacity:1;
+      }
+      .content{
+        width:100%;
+        .title{
+          font-size:20px;
+        }
+      }
+    }
+  }
+  &:hover{
+    .swiper-button-prev,
+    .swiper-button-next{
+      transform:translateX(0);
+      opacity:1;
+      visibility:visible;
+    }
+  }
+  &.loading{
+    opacity:0;
+    visibility:hidden;
+  }
 }
+.swiper-wrapper{
 
-.discover__description {
-  display: block;
-  font-size: var(--smaller-font-size);
 }
-
-.discover__img {
-  transition: var(--img-transition);
+.swiper-slide{
+  overflow: hidden;
+  @extend %backface_visibility_hidden;
+  .slide-bgimg{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-position:center;
+    background-size:cover;
+  }
+  .entity-img{
+    display:none;
+  }
+  .content{
+    position:absolute;
+    top:40%;
+    left:0;
+    width:50%;
+    padding-left:5%;
+    color:#fff;
+    .title{
+      font-size:2.6em;
+      font-weight:bold;
+      margin-bottom:30px;
+    }
+    .caption{
+      display:block;
+      font-size:13px;
+      line-height:1.4;
+      transform:translateX(50px);
+      opacity:0;
+      transition:opacity .3s ease, transform .7s ease;
+      &.show{
+        transform:translateX(0);
+        opacity:1;
+      }
+    }
+  }
 }
-
-.discover__img:hover {
-  transform: var(--img-scale);
+[class^="swiper-button-"]{
+  width:44px;
+  opacity:0;
+  visibility:hidden;
+  @extend %transition_all_03s;
 }
-
-.swiper-container-3d .swiper-slide-shadow-left,
-.swiper-container-3d .swiper-slide-shadow-right {
-  background-image: none;
+.swiper-button-prev{
+  transform:translateX(50px);
+}
+.swiper-button-next{
+  transform:translateX(-50px);
 }
 
 /*=============== EXPERIENCE ===============*/
@@ -833,6 +907,7 @@ input {
 @media screen and (min-width: 568px) {
   .video__container {
     display: grid;
+	place-items: center;
     grid-template-columns: .6fr;
     justify-content: center;
   }
@@ -1024,7 +1099,7 @@ input {
     gap: 3rem 2rem;
   }
   .place__card, .place__img {
-    height: 263px;
+    height: 400px;
   }
   .footer__content {
     justify-items: center;
@@ -1035,6 +1110,11 @@ input {
   .container {
     max-width: 1024px;
   }
+  .logo__info-img {
+    width: 150px;
+	  padding-top: 90px;
+  }
+
 }
 
 /* For tall screens on mobiles y desktop*/
@@ -1045,6 +1125,11 @@ input {
   .home__container, .home__img {
     height: 640px;
   }
+  .logo__info-img {
+    width: 150px;
+	  padding-top: 90px;
+  }
+
 }
 
 .ani{
@@ -1130,4 +1215,197 @@ input {
   100%{
     color:#AC92EC;
   }
+  
+
+
+.card-wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.img-display{
+    overflow: hidden;
+}
+.img-showcase{
+    display: flex;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+.img-showcase img{
+    min-width: 100%;
+}
+.img-select{
+    display: flex;
+}
+.img-item{
+    margin: 0.3rem;
+}
+.img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3){
+    margin-right: 0;
+}
+.img-item:hover{
+    opacity: 0.8;
+}
+.product-content{
+    padding: 2rem 1rem;
+}
+.product-title{
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    position: relative;
+    color: #12263a;
+    margin: 1rem 0;
+}
+.product-title::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 80px;
+    background: #12263a;
+}
+.product-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    background: #256eff;
+    color: #fff;
+    padding: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+.product-link:hover{
+    opacity: 0.9;
+}
+.product-rating{
+    color: #ffc107;
+}
+.product-rating span{
+    font-weight: 600;
+    color: #252525;
+}
+.product-price{
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.product-price span{
+    font-weight: 400;
+}
+.last-price span{
+    color: #f64749;
+    text-decoration: line-through;
+}
+.new-price span{
+    color: #256eff;
+}
+.product-detail h2{
+    text-transform: capitalize;
+    color: #12263a;
+    padding-bottom: 0.6rem;
+}
+.product-detail p{
+    font-size: 0.9rem;
+    padding: 0.3rem;
+    opacity: 0.8;
+}
+.product-detail ul{
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+.product-detail ul li{
+    margin: 0;
+    list-style: none;
+    background: url(https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/checked.png) left center no-repeat;
+    background-size: 18px;
+    padding-left: 1.7rem;
+    margin: 0.4rem 0;
+    font-weight: 600;
+    opacity: 0.9;
+}
+.product-detail ul li span{
+    font-weight: 400;
+}
+.purchase-info{
+    margin: 1.5rem 0;
+}
+.purchase-info input,
+.purchase-info .btn{
+    border: 1.5px solid #ddd;
+    border-radius: 25px;
+    text-align: center;
+    padding: 0.45rem 0.8rem;
+    outline: 0;
+    margin-right: 0.2rem;
+    margin-bottom: 1rem;
+}
+.purchase-info input{
+    width: 60px;
+}
+.purchase-info .btn{
+    cursor: pointer;
+    color: #fff;
+}
+.purchase-info .btn:first-of-type{
+    background: #256eff;
+}
+.purchase-info .btn:last-of-type{
+    background: #f64749;
+}
+.purchase-info .btn:hover{
+    opacity: 0.9;
+}
+.social-links{
+    display: flex;
+    align-items: center;
+}
+.social-links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: #000;
+    border: 1px solid #000;
+    margin: 0 0.2rem;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: all 0.5s ease;
+}
+.social-links a:hover{
+    background: #000;
+    border-color: transparent;
+    color: #fff;
+}
+
+@media screen and (min-width: 992px){
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+    }
+    .card-wrapper{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-imgs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product-content{
+        padding-top: 0;
+    }
 }
